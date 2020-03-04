@@ -1,50 +1,188 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<title>Unicode</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/simple.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
 
-		<script src="js/reveal.js"></script>
+</script>
+<style>
+	#lang {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		font-size: 80%;
+	}
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
-</html>
+	#lang > div {
+		padding: 20px;
+	}
+</style>
+<audio id="bwaaamp">
+	<source src="img/inceptionbutton.mp3">
+</audio>
+<div class="reveal">
+<div class="slides">
+
+<section>
+	<h1>Unicode</h1>
+	<h2>A brief introduction</h2>
+	<h4>Really, this should be quick.</h4>
+	<small>We'll break for coffee early</small>
+	<p style="font-size: 45%; margin-top:0;">Schedul҉i͠ng̸ for 2 hours bu҉t҉ sh͢o҉u̵l̕d on͏ly ҉t̸a͠ke ͞a few minutes</p>
+	<p style="font-size: 40%; margin-top:0;">We'͜ĺl̴ ̵be̛ ̸givin̷g͟ ̕ţim̡e ̵back</p>
+	<p style="font-size: 30%">U͔͇̮͚̙̮̣̖͖ͯ͒̓̋ͪn̨͇̜̱͚̰̻̔͌̾̌̽͌̈i̡̠̹̯͓͇̯͕̮̬ͪ̒͊̽̓ͫ̓̆ͦcͣ͒̓̒͗̒̆͏͎̰́ͅo̶͚̖͇̗ͯ̇ͣ̾̓̇ḑ̧̪͍͚͋͂̀͒̀̚ͅe̷̝͉̱̤͑͑̐̿̕
+	̝̼̜̙͖̱̤͍̱̐̒̽̐ͣ͋͝ï̛̹̮̯̥̔̓͐̓ͮ̕͡s͕̼͕̓̀̋n̷̦͉̦̣̉̆̇ͪ͒ͩ͠'̢̘̱͙̈̈̂̌̃͐͒t̻̖̲̍ͨͭͧ̓̀̅̿̍͡ͅ
+	̷̵̟͎ͪ͌͂͌ͩͮ̉̚͡r̊͆͒ͫ̎̈͏͎̲̝̝ȩ͔̪̠̦̗͋̈̒̀͒̽ͨͤ͢͡ä̼͕̥͉̰͚̲͊͊̍̀l̻̳͈̫̠̟̾́̏̚͢ľͬ̍ͭ͋̑̀҉̰̙̹̺y̶̡̖͍͕͖̦̝̤̝ͩͩͯ̋̎͆́́ͩ
+	ͫ̽̇͒͛͏̲̠̤̳̗͔̠̰t̶̠̟̘̞̘͉̲̉̃ͥ̇̇̐̅̄h̸̭̰̜͚̞̳̦̮̾ͤ͂̄̀͝a̜̼̬̰̋͆͒̇̈ţ͕̪̻͉̱̽́̽͑ͣ̇͒͊ͪ
+	̖̫͈̤͚̗̈́̅ͦ́͢͡c͍̉͡͠õ̸̘̩̣͙̬ͫ̊̅͛̍͐ͮ͜m̶̨̲̹̠̜͕̿͠p͚̗͍͖̦͕̑̃͋̄́ͅlͯ͐͛̃̇̉͌҉̨̧̳͇̩͉͚̞ͅͅͅę̶͖͇̦̤̩̳̹͛̽͝x̴̥̜͈̟͓͓͛̓̓̂̐̑̏̍͘
+	̷̖̲̌́ͩȯ̷̢̠̂ͪ̾̋̏f͐̄͊͏̵̥ ͎̣͓̯͎̜̻̐̌̉a̸̲̹̽ͯͦ̌͑̾̓̎
+	̴̻̦̝̠̆̑̏̔̂̀̋̀̕t̝̤͉̪̺͕̪̦̑̒ͫ͛̈ͨ́o̯̗̖͓̥̩̓̔ͦp̺̦̝̞̪̤̗̮̣͑ͫ̋ͥ͜i͊̀̂ͫ̐̍̀͏̪̯͕ç̨̜̀̓̽́͋̓̓ͨ̚͡
+	̺̗̈̓͘a̢̳̜̮̫͂n̪̯ͪ̿̑͌ͧ̒ͧ͆ẏ̶̠͚̤̊͊ͣ̚͠͝w̖͔͔̤̗̜̆̐͂͒̎̑́̑͝a̘̯͈̻̥͍̺ͮͅͅy̦̺̰͕͖͉ͨͦ̇̓͞͞ͅ</p>
+</section>
+<section>
+	<h2>How is this slide even possible??</h2>
+	<div id="lang">
+		<div>Hello, friends!</div>
+		<div>مرحبا أيها الأصدقاء!&rlm;</div>
+		<div>हैलो मित्रों!</div>
+		<div>皆さん、こんにちは！</div>
+		<div>你好朋友！</div>
+		<div>Cześć przyjaciele!</div>
+		<div>שלום חברים!&rlm;</div>
+		<div>Здравствуйте друзья!</div>
+		<div>Xin chào các bạn!</div>
+		<div>안녕하세요 친구!</div>
+		<div>হ্যালো বন্ধুরা!</div>
+		<div>สวัสดีเพื่อน!</div>
+		<div>வணக்கம் நண்பர்களே!</div>
+		<div>ជំរាបសួរ, មិត្តភក្តិ!</div>
+	</div>
+</section>
+<section>
+	<section>
+		<h2>Level 1: Fonts</h2>
+	</section>
+	<section>
+		<p>A <b>font</b> is a mapping of characters to <b>glyphs</b>.</p>
+		<p>It's a giant table of bitmaps or vectors<br> that represent characters.</p>
+	</section>
+	<section>
+		<p>A <b>glyph</b> is a visual representation of a character.</p>
+		<img src="img/glyphs.png">
+		<p>A font can contain many glyphs for the same character with multiple styles.</p>
+	</section>
+	<section>
+		<p>Ok, but how do you tell the font which glyph you want?</p>
+	</section>
+</section>
+<section>
+	<section data-state="bwaaamp">
+		<h2>Level 2: Unicode & Code Points</h2>
+	</section>
+	<section>
+		<p><b>Unicode</b> is an international standard for<br>representing and working with text</p>
+		<p>It covers the majority of Earth's writing systems</p>
+		<p>It includes 283,506 characters as of Version 13</p>
+	</section>
+	<section>
+		<p>Unicode is also a giant table, <br>except it holds <b>code points</b></p>
+		<p>A <b>code point</b> is an integer assigned to a character.</p>
+		<p>Often written like <code>U+XXXX</code></p>
+	</section>
+	<section>
+		<h3>Example Unicode Code Points</h3>
+		<table style="font-size:50%">
+			<tr>
+				<th>Code Point</th>
+				<th>Name</th>
+				<th>Block</th>
+				<th>Glyph</th>
+			</tr>
+			<tr>
+				<td>U+0007</td>
+				<td>BELL</td>
+				<td>Control Characters</td>
+				<td>(none)</td>
+			</tr>
+			<tr>
+				<td>U+0041</td>
+				<td>LATIN CAPITAL LETTER A</td>
+				<td>Basic Latin</td>
+				<td>A</td>
+			</tr>
+			<tr>
+				<td>U+13A3</td>
+				<td>CHEROKEE LETTER O</td>
+				<td>Cherokee</td>
+				<td>Ꭳ</td>
+			</tr>
+			<tr>
+				<td>U+030C</td>
+				<td>COMBINING CARON</td>
+				<td>Combining Diacritical Marks</td>
+				<td>◌̌</td> <!-- VSCode bug? Look at how this renders! -->
+			</tr>
+		</table>
+	</section>
+	<section>
+		<p>A <b>grapheme</b> is a combination of one or more <b>code points</b> that represent an atomic unit of a
+			particular writing system</p>
+	</section>
+	<section>
+		<p>"Character" is ambiguous and the term should be avoided when talking about text.</p>
+		<p class=fragment>Use <b>code point</b> when referring to an entry in the Unicode database</p>
+		<p class=fragment>Use <b>grapheme</b> when referring to an atomic unit of a writing system (letter,  punctuation, or emoji)</p>
+		<p class=fragment>Use <b>glyph</b> when referring to a particular visual representation of a grapheme</p>
+	</section>
+	<section>
+		<p>Ok but how do you represent any of this in computer memory 😣</p>
+	</section>
+</section>
+<section>
+	<section data-state="bwaaamp">
+		<h2>Level 3: Encodings</h2>
+		<p>Bwaaamp?</p>
+	</section>
+</section>
+
+
+
+</div>
+</div>
+<script src="js/reveal.js"></script>
+<script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+	hash: true,
+	dependencies: [
+		{ src: 'plugin/markdown/marked.js' },
+		{ src: 'plugin/markdown/markdown.js' },
+		{ src: 'plugin/highlight/highlight.js' },
+		{ src: 'plugin/notes/notes.js', async: true }
+	]
+});
+
+const audio = document.getElementById('bwaaamp');
+
+Reveal.addEventListener('bwaaamp', function () {
+	console.log("Bwaaaamp");
+	audio.play();
+}, false);
+</script>
